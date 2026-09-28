@@ -1,4 +1,4 @@
-package es.jllopezalvarez.psp.ut01.ejercicios.ejercicio04;
+package es.jllopezalvarez.psp.ut01.ejercicios.ejercicio04a;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -15,6 +15,9 @@ public class Productor {
             Files.deleteIfExists(Path.of(PATH_FICHERO));
 
             for (int i = 1; i <= LOOP_COUNT; i++) {
+
+
+
                 try (var outputStream = new FileWriter(PATH_FICHERO, true)) {
                     outputStream.write(LocalDateTime.now().toString());
                     outputStream.flush();

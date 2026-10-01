@@ -1,6 +1,5 @@
-package es.jllopezalvarez.psp.ut01.ejemplos;
+package es.jllopezalvarez.psp.ut01.ejemplos.clase;
 
-import java.io.File;
 import java.io.IOException;
 
 public class Ejemplo05 {

@@ -1,4 +1,4 @@
-package es.jllopezalvarez.psp.ut01.ejemplos;
+package es.jllopezalvarez.psp.ut01.ejemplos.clase;
 
 import java.io.BufferedReader;
 import java.io.IOException;

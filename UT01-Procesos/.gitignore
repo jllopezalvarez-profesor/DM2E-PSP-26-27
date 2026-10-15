@@ -37,3 +37,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/src/main/java/es/jllopezalvarez/psp/ut01/actividad/

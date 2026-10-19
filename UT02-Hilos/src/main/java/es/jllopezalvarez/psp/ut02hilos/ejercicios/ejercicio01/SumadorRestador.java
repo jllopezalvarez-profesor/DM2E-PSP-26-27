@@ -4,6 +4,7 @@ public class SumadorRestador extends Thread {
     private static final long NUM_LIMIT = 2_000_000_000;
     private final boolean tengoQuesumar;
 
+
     public SumadorRestador(boolean tengoQuesumar) {
         this.tengoQuesumar = tengoQuesumar;
     }
@@ -11,7 +12,6 @@ public class SumadorRestador extends Thread {
     @Override
     public void run() {
 
-        this.
 
         long acumulador = 0;
 

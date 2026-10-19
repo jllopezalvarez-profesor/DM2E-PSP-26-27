@@ -14,6 +14,8 @@ public class Main {
         // contador.run(); // No se arrancan hilos con RUN, sino con START
         contador.start();
 
+        System.out.println("Ya he arrancado el hilo contador, me duermo un poco.");
+
         Thread.sleep(2000);
 
         System.out.println("Fin del hilo principal");

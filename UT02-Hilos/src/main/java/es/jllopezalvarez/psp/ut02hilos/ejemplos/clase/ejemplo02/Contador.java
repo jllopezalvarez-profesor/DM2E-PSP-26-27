@@ -13,7 +13,7 @@ public class Contador extends Thread {
             System.out.printf("Soy el hilo %s. ", this.threadId());
             System.out.printf("He contado hasta %d.\n", i );
             try {
-                Thread.sleep(random.nextLong(0, 1000));
+                Thread.sleep(random.nextLong(0, 2000));
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

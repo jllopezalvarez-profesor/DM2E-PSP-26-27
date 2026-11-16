@@ -8,8 +8,6 @@ import java.util.concurrent.ConcurrentMap;
 
 public class GeneradorNombres extends Thread {
 
-    ConcurrentMap
-
     private final Faker faker = new Faker(Locale.forLanguageTag("ES-es"));
 
     private final List<String> nombres;
@@ -23,7 +21,7 @@ public class GeneradorNombres extends Thread {
     public void run() {
 
         try {
-            while(!Thread.interrupted()){
+            while (!Thread.interrupted()) {
                 aniadirNombre();
                 Thread.sleep(1);
             }
@@ -35,11 +33,11 @@ public class GeneradorNombres extends Thread {
     }
 
     /*
-    * Esto no funciona porque como es equivalente a
-    * synchronized(this)
-    * cada hilo bloquea usando un candado distinto.
-    * No comparten el candado, como si pasa en el ejemplo 04.
-    * */
+     * Esto no funciona porque como es equivalente a
+     * synchronized(this)
+     * cada hilo bloquea usando un candado distinto.
+     * No comparten el candado, como si pasa en el ejemplo 04.
+     * */
     private synchronized void aniadirNombre() {
         nombres.add(faker.name().firstName());
     }

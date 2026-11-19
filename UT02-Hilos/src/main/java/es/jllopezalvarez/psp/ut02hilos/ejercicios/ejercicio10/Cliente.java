@@ -6,6 +6,8 @@ public class Cliente extends Thread {
     private static final long TIEMPO_MIN_DESCANSO_CLIENTES = 10;
     private static final long TIEMPO_MAX_DESCANSO_CLIENTES = 20;
     private static final long NUM_OPERACIONES = 100;
+    public static final int CANTIDAD_MINIMA_OPERACION = 10;
+    public static final int CANTIDAD_MAXIMA_OPERACION = 200;
 
     private final int numCliente;
     private final Banco banco;
@@ -26,7 +28,7 @@ public class Cliente extends Thread {
                 // decidir si es ingreso. Si no es, es retirada.
                 boolean esIngreso = random.nextBoolean();
                 // Elegir cantidad aleatoria
-                int cantidad = random.nextInt(10, 200);
+                int cantidad = random.nextInt(CANTIDAD_MINIMA_OPERACION, CANTIDAD_MAXIMA_OPERACION);
                 // Realizar la operación
                 if (esIngreso) {
                     cantidad = banco.ingresar(this.numCliente, cantidad);

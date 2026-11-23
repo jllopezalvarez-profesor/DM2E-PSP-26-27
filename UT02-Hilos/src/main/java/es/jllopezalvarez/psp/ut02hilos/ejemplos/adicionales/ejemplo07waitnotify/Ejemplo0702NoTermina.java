@@ -8,6 +8,7 @@ public class Ejemplo0702NoTermina {
 
         // Crear un objeto para usarlo como "candado"
         Object object = new Object();
+        Object object2 = new Object();
 
         // Se abre una zona sincronizada usando el objeto creado como candado.
         // Marca un warning con "Synchronization on local variable..."

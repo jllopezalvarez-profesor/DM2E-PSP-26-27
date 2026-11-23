@@ -11,7 +11,7 @@ public class Ejemplo0701ErrorSiNoEnSync {
 
         // Intentar llamar a wait sobre el objeto
         // No es un error de compilación, pero si de ejecución.
-        // Lanza IllegalMonitoStateException, con el mensaje "current thread is not owner"
+        // Lanza IllegalMonitorStateException, con el mensaje "current thread is not owner"
         object.wait();
 
         // Esto pasa porque hasta que no se hace un synchronized(object) no se "posee" el monitor.

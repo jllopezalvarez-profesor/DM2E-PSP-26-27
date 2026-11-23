@@ -6,6 +6,7 @@ import java.util.Queue;
 public class NumberQueue {
     private final Queue<Integer> queue = new LinkedList<>();
 
+    // Recordatorio: un método sincronizado es como hacer synchronized(this)
     public synchronized void add(Integer number) {
 
         // Añadir el elemento a la cola
@@ -19,6 +20,7 @@ public class NumberQueue {
 
     }
 
+    // Recordatorio: un método sincronizado es como hacer synchronized(this)
     public synchronized Integer remove() throws InterruptedException {
 
         // El hilo que ha pedido algo espera si no hay datos. Solo se despierta cuando otro hilo haga un notify.
